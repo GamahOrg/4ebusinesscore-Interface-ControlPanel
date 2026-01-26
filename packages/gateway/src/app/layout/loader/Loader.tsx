@@ -1,0 +1,13 @@
+import { toAbsoluteUrl } from '@4eplatform/gateway/src/app/helpers'
+import './loader.css'
+const Loader = () => {
+  return (
+    <div id="loader-icon">
+      <img src={toAbsoluteUrl('/media/img/logo.png')} alt="loading.."/>
+      <div className="logo-border logo-border-rl"></div>
+      <div className="logo-border logo-border-tb"></div>
+        </div>
+  )
+}
+
+export default Loader

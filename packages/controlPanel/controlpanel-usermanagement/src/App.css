@@ -1,0 +1,152 @@
+.card-check label {
+  width: 100%;
+}
+
+.card-check .card-input-element {
+  display: none;
+  box-shadow: 0 0 3px black;
+}
+
+.card-check .card-input {
+  margin: 10px;
+  padding: 0px;
+}
+.card-check .card-body,
+.card-check .card-header {
+  padding: 3px 2px;
+  text-align: center;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-check .card-header {
+  min-height: 50px;
+}
+.card-check .card-input:hover {
+  cursor: pointer;
+}
+.card-check i {
+  font-size: 18pt;
+  color: #07aecc;
+}
+.card-check .card-input-element:checked + .card-default {
+  box-shadow: 0 0 1px 1px #07aecc;
+  background-color: rgba(128, 128, 128, 0.068);
+}
+.workspace-name {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.workspace-name:hover {
+  color: gray;
+  transition: 0.5s;
+}
+
+.custom-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
+.toggle-radio {
+  margin-bottom: 20px;
+}
+.switch {
+  position: absolute;
+  left: 50%;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  margin: -30px 0 0 -90px;
+  background: #0da5d3;
+  transition: all 0.2s ease;
+  border-radius: 25px;
+}
+.switch span {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  margin: -2px 0px 0px -4px;
+  background: #fff;
+  display: block;
+  transform: rotate(-45deg);
+  transition: all 0.2s ease;
+}
+.switch span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 12px;
+  margin-top: -8px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+.toggle-radio input[type="radio"] {
+  display: none;
+}
+.switch label {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.2);
+  width: 50%;
+  line-height: 40px;
+  transition: all 0.2s ease;
+}
+label[for="permissionCard"] {
+  position: absolute;
+  left: 0px;
+  height: 20px;
+}
+label[for="advanced"] {
+  position: absolute;
+  right: 0px;
+}
+#advanced:checked ~ .switch {
+  background: #0da5d3;
+}
+.switch i {
+  position: absolute;
+  left: 49%;
+  color: gainsboro;
+  top: 13px;
+  font-size: 14pt;
+  transform: rotate(-180deg);
+  transition: 1s;
+
+}
+#advanced:checked ~ .switch i {
+  color: #fff;
+  transform: rotate(180deg);
+  transition: 1s;
+}
+
+#permissionCard:checked ~ .switch label[for="permissionCard"] {
+  color: #fff;
+}
+#advanced:checked ~ .switch label[for="advanced"] {
+  color: #fff;
+}
+.permissions-cont {
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-top: 20px;
+  border-bottom: 1px solid gainsboro;
+}

@@ -1,0 +1,9 @@
+diff a/packages/modules/controlPanel/control-panel-services-settings/src/components/dynamic-workspace/work-space/dynamic-workspace.tsx b/packages/modules/controlPanel/control-panel-services-settings/src/components/dynamic-workspace/work-space/dynamic-workspace.tsx	(rejected hunks)
+@@ -338,7 +338,6 @@
+                               >
+                                 {(provided) => (
+                                   <div
+-                                    className=""
+                                     className="card-container d-flex flex-wrap"
+                                     {...provided.draggableProps}
+                                     {...provided.dragHandleProps}
