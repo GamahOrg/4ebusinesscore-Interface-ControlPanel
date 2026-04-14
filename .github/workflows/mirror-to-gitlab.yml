@@ -14,5 +14,5 @@ jobs:
       - uses: action-pack/gitlab-sync@v3
         with:
           username: ${{ github.actor }}
-          url: https://gitlab.rega.gov.sa/rega-softwares/qimah-fe-interface-compliance.git # Personal access token from gitlab.com
+          url: https://gitlab.rega.gov.sa/rega-softwares/qimah-fe-interface-controlpanel.git # Personal access token from gitlab.com
           token: ${{ secrets.GITLAB_TOKEN }}
